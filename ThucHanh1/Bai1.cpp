@@ -29,8 +29,15 @@ int prime(int n) {
 }
 
 // Kiểm tra năm nhuận
-  
-
+bool laNamNhuan(int nInput)
+{
+	if ((nInput % 4 == 0 && nInput % 100 != 0) || nInput % 400 == 0)
+	{
+		return true;
+	}
+	return false;
+}
+ 
 
 int ChonMenu()
 {
